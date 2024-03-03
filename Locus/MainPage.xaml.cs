@@ -1,18 +1,18 @@
 ﻿using Locus.Pages;
 
-namespace Locus
+namespace Locus;
+public partial class MainPage : ContentPage
 {
-    public partial class MainPage : ContentPage
+    public MainPage()
     {
-        public MainPage()
-        {
-            InitializeComponent();
-        }
-
-        private void OnCounterClicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new Userpage());
-        }
+        InitializeComponent();
+        NavigationPage.SetHasNavigationBar(this, false);
     }
 
+    private void OnCounterClicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new Userpage());
+    }
 }
+
+

@@ -50,7 +50,7 @@
                 Text="Logga in"
                 WidthRequest="230"
                 TextColor="WhiteSmoke"
-                BackgroundColor="#425eeb"
+                BackgroundColor="#4b57db"
                 Clicked="OnCounterClicked" 
                 x:Name="CounterBtn" 
                 HorizontalOptions="Center" 

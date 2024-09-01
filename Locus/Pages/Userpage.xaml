@@ -6,7 +6,7 @@
     <Grid>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="100" />
+            <RowDefinition Height="70" />
             <!-- Header -->
             <RowDefinition Height="*" />
             <!-- Main content -->
@@ -19,7 +19,17 @@
         </StackLayout>
 
         <Grid Grid.Row="1" VerticalOptions="FillAndExpand" BackgroundColor="#0b071a" HorizontalOptions="FillAndExpand">
-            
+            <CollectionView ItemsSource="{Binding Items}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Label Text="asd" />
+                            <Button Text="Toggle Description" />
+                            <Label Text="{Binding Description}" IsVisible="{Binding IsDescriptionVisible}" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
         </Grid>
 
         <VerticalStackLayout Grid.Row="2" BackgroundColor="#0b0926" HorizontalOptions="FillAndExpand" Padding="25">

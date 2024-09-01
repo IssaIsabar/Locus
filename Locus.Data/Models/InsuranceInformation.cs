@@ -1,4 +1,5 @@
 ﻿using Xamarin.Forms;
+//testar
 
 namespace Locus.Data.Models;
 public class InsuranceInformation : BindableObject

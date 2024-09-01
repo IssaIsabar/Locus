@@ -8,4 +8,9 @@ public partial class Userpage : ContentPage
         NavigationPage.SetHasNavigationBar(this, false);
         NavigationPage.SetBackButtonTitle(this, null);
     }
+
+    private void OnCounterClicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new InsurancePage());
+    }
 }

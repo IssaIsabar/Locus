@@ -14,24 +14,38 @@
             <!-- Footer -->
         </Grid.RowDefinitions>
 
+        <!-- Header -->
         <StackLayout Grid.Row="0" Orientation="Vertical" BackgroundColor="#0b0926">
-            <Label HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+            <Label HorizontalOptions="Center" Text="Inloggad som Johan" VerticalOptions="CenterAndExpand" />
         </StackLayout>
 
+        <!-- Main content -->
         <Grid Grid.Row="1" VerticalOptions="FillAndExpand" BackgroundColor="#0b071a" HorizontalOptions="FillAndExpand">
-            <CollectionView ItemsSource="{Binding Items}">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <StackLayout>
-                            <Label Text="asd" />
-                            <Button Text="Toggle Description" />
-                            <Label Text="{Binding Description}" IsVisible="{Binding IsDescriptionVisible}" />
-                        </StackLayout>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
+            <VerticalStackLayout Grid.Row="2" BackgroundColor="#0b0926" HorizontalOptions="FillAndExpand" Padding="25" Spacing="10" VerticalOptions="CenterAndExpand" >
+                <Button
+                    Text="Mina försäkringar"
+                    Clicked="OnCounterClicked" 
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    SemanticProperties.HeadingLevel="Level1"
+                    Margin="0,0,0,0"/>
+                <Button
+                    Text="Lån"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    SemanticProperties.HeadingLevel="Level1"
+                    Margin="0,0,0,0"
+                    />
+                <Button
+                    Text="Pension"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    SemanticProperties.HeadingLevel="Level1"
+                    Margin="0,0,0,0"/>
+            </VerticalStackLayout>
         </Grid>
 
+        <!-- Footer -->
         <VerticalStackLayout Grid.Row="2" BackgroundColor="#0b0926" HorizontalOptions="FillAndExpand" Padding="25">
             <Label
             Text="Behöver du hjälp? Klicka här"

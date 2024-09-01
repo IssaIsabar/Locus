@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Locus.Pages.InsurancePage"
+             Title="Mina försäkringar">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70" />
+            <!-- Header -->
+            <RowDefinition Height="*" />
+            <!-- Main content -->
+            <RowDefinition Height="70" />
+            <!-- Footer -->
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="1" VerticalOptions="FillAndExpand" BackgroundColor="#0b071a" HorizontalOptions="FillAndExpand">
+
+            <VerticalStackLayout BackgroundColor="#0b0926">
+                <Label 
+            Text="Aktiva försäkringar"
+            FontSize="18"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start"
+            Padding="20,20,10,10"/>
+                <Label 
+            Text="Övriga försäkringar"
+            FontSize="18"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start"
+            Padding="20,20,10,10"/>
+                <Button
+            Text="Lägg till försäkringar"
+            FontSize="15"
+            FontAttributes="Bold"
+            Margin="20"/>
+            </VerticalStackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>
